@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional Statements</h1>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button id="addButton">Add New Item</button>
+
+    <script src="app.js"></script>
+    <script>
+
+        document.getElementById('addButton').onclick = function() {
+            const li = document.createElement("li");
+            li.innerHTML = "New Item";
+            document.getElementById('myList').appendChild(li);
+        }
+
+    </script>
+</body>
+</html>
